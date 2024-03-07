@@ -1,0 +1,25 @@
+﻿.equals {
+    background-color: #1c87c9; /* Different background color for the equals button */
+    color: white;
+    grid-column: span 4; /* If you want the equals button to span the entire width */
+}
+
+/* Adjust the grid layout for a 4-column layout */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator-display {
+    width: 100%;
+    background: #ffffff; /* A light background color */
+    border: 1px solid #d4d4d4; /* A subtle border */
+    padding: 20px;
+    margin-bottom: 10px; /* Spacing between the display and the buttons */
+    text-align: right; /* Align the text to the right */
+    font-size: 2em; /* Larger font size for better visibility */
+    overflow-x: auto; /* Allows scrolling horizontally if the number is too long */
+    word-wrap: break-word; /* Ensures long words do not overflow */
+    min-height: 50px; /* Minimum height for the display */
+}
